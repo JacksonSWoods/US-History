@@ -3,10 +3,11 @@ window.onload = function() {
      var pos = 0; 
     //our box element
     var box = document.getElementById('box');
+    var container = document.getElementById('container');
     var t = setInterval(move, 10);
   
     function move() {
-        if(pos >= 150) {
+        if(pos >= container.offsetWidth - 50) {
             clearInterval(t);
         }
         else {
