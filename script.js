@@ -13,7 +13,7 @@ window.onload = function() {
         // 'D' key is pressed
     }
 }
-          t = setInterval(moveLeft, 10);});
+          t = setInterval(moveLeft, 10);
 
     function moveLeft() {
         if(pos >= container.offsetWidth + 50) {
