@@ -7,7 +7,7 @@ window.onload = function() {
     var container = document.getElementById('container');
      document.onkeypress = function(event){
     let key = event.key.toUpperCase();
-    if ( key == 'ARROWUP' ) {
+    if ( key == 'W' ) {
         alert();
     } else if ( key == 'D' ) {
         // 'D' key is pressed
