@@ -11,6 +11,7 @@ window.onload = function() {
         alert();
     } else if ( key == 'D' ) {
         // 'D' key is pressed
+         t = setInterval(moveLeft, 10);
     }
 }
           t = setInterval(moveLeft, 10);
