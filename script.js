@@ -5,7 +5,7 @@ window.onload = function() {
     //our box element
     var box = document.getElementById('box');
     var container = document.getElementById('container');
-     window.onkeypress = function(event){
+     document.onkeypress = function(event){
     let key = event.key.toUpperCase();
     if ( key == 'ARROWUP' ) {
         alert();
