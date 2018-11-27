@@ -11,13 +11,12 @@ window.onload = function() {
         alert();
     } else if ( key == 'D' ) {
         // 'D' key is pressed
-         t = setInterval(moveRight, 10);
+      moveRight();
     }
 }
 
     function moveRight() {
-        if(pos >= container.offsetWidth + 50) {
-            clearInterval(t);
+        if(pos >= container.offsetWidth - 50) {
         }
         else {
             pos += 1;
