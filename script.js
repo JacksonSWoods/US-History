@@ -20,7 +20,7 @@ window.onload = function() {
 };
 
     function moveRight() {
-        if(posleft < container.offsetWidth - 50) {
+        if(posleft < container.offsetWidth - 50 && container.offsetWidth % 50 !== 0) {
            
                       posleft += 50;
             box.style.left = posleft+'px';
