@@ -16,7 +16,7 @@ window.onload = function() {
         moveLeft();
     }else if(key == 's'){
         moveDown();
-    }
+    }else if(key == 'SPACE'){alert("help hes raping me")}
 };
 
     function moveRight() {
