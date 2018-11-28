@@ -46,13 +46,18 @@ window.onload = function() {
 		var Scene = 1;
 		switch(posleft){
 			case 50:
-				alert("case 50");
+				if(posup == 200 || posup == 250){
+					alert("case 50");
+				}
 			break;
 			case 200:
 				alert("case 200");
 			break;
 			case 550:
 				alert("case 550");
+			break;
+			case 750:
+				alert("leaving");
 			break;
 		}
 	}
