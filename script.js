@@ -16,11 +16,11 @@ window.onload = function() {
         moveLeft();
     }else if(key == 's'){
         moveDown();
-    }else if(key == 'SPACE'){alert("help hes raping me")}
+    }else if(event.keyCode == 32){alert("help hes raping me")}
 };
 
     function moveRight() {
-        if(posleft < container.offsetWidth - 50 && container.offsetWidth % 50 !== 0) {
+        if(posleft < container.offsetWidth - 50) {
            
                       posleft += 50;
             box.style.left = posleft+'px';
