@@ -16,34 +16,14 @@ window.onload = function() {
         moveLeft();
     }else if(key == 's'){
         moveDown();
-    }else if(event.keyCode == 32){alert("help hes raping me")}
+    }else if(event.keyCode == 32){
+    	nextScene();
+    }
 };
 
-    function moveRight() {
-        if(posleft < container.offsetWidth - 50) {
-           
-                      posleft += 50;
-            box.style.left = posleft+'px';
-        }
-    }
-         function moveLeft() {
-        if(posleft > 0) {
-          
-                      posleft -= 50;
-            box.style.left = posleft+'px';
-        }
-    }
-      function moveDown() {
-        if(posup <= 400) {
-                      posup += 50;
-            box.style.top = posup+'px';
-        }
-    }
-     function moveUp() {
-        if(posup >= 10) {
-			
-                      posup -= 50;
-            box.style.top = posup+'px';
-		}   
-    }
+    function moveRight() {if(posleft < container.offsetWidth - 50) {posleft += 50;box.style.left = posleft+'px';}}
+       function moveLeft() {if(posleft > 0) {posleft -= 50;box.style.left = posleft+'px';}}
+      function moveDown() {if(posup <= 400) {posup += 50;box.style.top = posup+'px';}}
+     function moveUp() {if(posup >= 10) {posup -= 50;box.style.top = posup+'px';}}
+	function nextScene(){var Scene = 1;}
 };
